@@ -92,8 +92,11 @@
       font-size: 1.25rem;
       font-weight: 300;
       color: #ffffff;
-      height: 1.5em;
+      height: 3em;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       position: relative;
     }
     .hero-animated-text span {
@@ -132,6 +135,8 @@
 </head>
 <body>
   <header>
+    <img src="ailogo.png" alt="Brilliant AI Logo" class="logo-img" />
+    <img src="images/ai-solutions_800x600.webp" alt="AI Lightbulb Right" style="position: absolute; top: 1rem; right: 1rem; width: 140px; height: auto; opacity: 0.85;" />
     <h1>Brilliant AI Solutions</h1>
     <p class="tagline">Smarter Systems. More Freedom.</p>
       <div class="hero-animated-text">
@@ -155,11 +160,12 @@
     <img src="images/assistant.jpg" alt="Assistant at Work" style="max-width: 45%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
     <div style="flex: 1 1 45%;">
       <h2>🧠 Services</h2>
+      <p>We build tailored AI-powered solutions that transform the way small businesses operate. Our services include:</p>
       <ul>
-        <li>Custom AI Assistants (Sales, Admin, Support)</li>
-        <li>Workflow Automation (Email, Calendars, Social Media)</li>
-        <li>AI Integration for WhatsApp, Telegram, and Web</li>
-        <li>Training & Support for Teams</li>
+        <li><strong>Smart Virtual Assistants:</strong> Handle client inquiries, schedule appointments, and even draft content.</li>
+        <li><strong>Workflow Automation:</strong> Streamline your internal processes by automating emails, calendar syncing, and task reminders.</li>
+        <li><strong>AI-Enhanced Communication:</strong> Integrate AI with your favorite platforms like WhatsApp, Telegram, and Slack.</li>
+        <li><strong>Custom Tools & Training:</strong> From one-click dashboards to automation training for teams, we provide it all.</li>
       </ul>
       <a class="button" href="#">See Use Cases</a>
     </div>
@@ -169,7 +175,14 @@
     <img src="images/entrepreneur.jpg" alt="Entrepreneur" style="max-width: 45%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
     <div style="flex: 1 1 45%;">
       <h2>🎯 Who We Work With</h2>
-      <p>We specialize in working with solopreneurs, independent professionals, and small teams who want to scale without stress. Ideal for coaches, stylists, educators, and content creators.</p>
+      <p>We partner with forward-thinking entrepreneurs and small teams across diverse industries including:</p>
+      <ul>
+        <li>📚 Online Coaches & Educators</li>
+        <li>💇‍♀️ Stylists & Personal Service Providers</li>
+        <li>🎥 Content Creators & Digital Marketers</li>
+        <li>🏥 Wellness & Health Professionals</li>
+      </ul>
+      <p>They all share one thing in common: the need to save time and amplify their impact with smart automation.</p>
       <a class="button" href="#">See If We're a Fit</a>
     </div>
   </section>
