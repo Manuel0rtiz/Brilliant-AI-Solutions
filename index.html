@@ -6,7 +6,7 @@
   <title>Brilliant AI Solutions</title>
   <link rel="icon" type="image/png" href="favicon-v5.png" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-$1
+
   <style>
     body {
       margin: 0;
@@ -87,6 +87,32 @@ $1
     .button:hover {
       background: #60a3bc;
     }
+      .hero-animated-text {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #ffffff;
+      height: 1.5em;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-animated-text span {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      animation: slideText 9s infinite;
+    }
+    .hero-animated-text span:nth-child(1) { animation-delay: 0s; }
+    .hero-animated-text span:nth-child(2) { animation-delay: 3s; }
+    .hero-animated-text span:nth-child(3) { animation-delay: 6s; }
+
+    @keyframes slideText {
+      0% { opacity: 0; transform: translateY(100%); }
+      10% { opacity: 1; transform: translateY(0); }
+      30% { opacity: 1; transform: translateY(0); }
+      40% { opacity: 0; transform: translateY(-100%); }
+      100% { opacity: 0; }
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -105,9 +131,14 @@ $1
   </script>
 </head>
 <body>
-  $1
+  <header>
     <h1>Brilliant AI Solutions</h1>
     <p class="tagline">Smarter Systems. More Freedom.</p>
+      <div class="hero-animated-text">
+      <span>Free Your Time.</span>
+      <span>Grow Your Business.</span>
+      <span>Automate the Busywork.</span>
+    </div>
   </header>
 
   <section style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
