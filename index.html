@@ -30,7 +30,8 @@
       color: #60a3bc;
     }
     main {
-      max-width: 900px;
+      width: 95%;
+      max-width: 1200px;
       margin: auto;
       padding: 2rem;
     }
@@ -45,11 +46,11 @@
       align-items: center;
       gap: 2rem;
     }
-    .section-text {
-      flex: 1 1 55%;
+    .section-text, .section-image {
+      flex: 0 1 48%;
+      min-width: 300px;
     }
     .section-image {
-      flex: 1 1 40%;
       max-width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -77,6 +78,11 @@
       font-size: 0.9rem;
       color: #777;
       margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+      .section-text, .section-image {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
