@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brilliant AI Solutions helps small businesses automate tasks, save time, and grow using artificial intelligence." />
+  <meta property="og:title" content="Brilliant AI Solutions" />
+  <meta property="og:description" content="AI-powered solutions for small businesses, coaches, consultants, and more." />
+  <meta property="og:image" content="images/preview.jpg" />
+  <meta property="og:type" content="website" />
   <title>Explore Solutions | Brilliant AI Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Harmattan&display=swap" rel="stylesheet">
   <style>
@@ -12,12 +17,18 @@
       color: #333;
       background: #f4f4f4;
       line-height: 1.7;
+      scroll-behavior: smooth;
     }
     header {
       background: linear-gradient(to bottom right, rgba(11, 19, 43, 0.85), rgba(28, 119, 195, 0.85));
       color: white;
       padding: 4rem 2rem 3rem;
       text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     header h1 {
       margin: 0;
@@ -27,6 +38,24 @@
     header p {
       margin-top: 1rem;
       font-size: 1.25rem;
+      color: #60a3bc;
+    }
+    nav {
+      background: #0b132b;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
       color: #60a3bc;
     }
     main {
@@ -45,6 +74,11 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 2rem;
+      animation: fadeInUp 0.8s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .section-text, .section-image {
       flex: 0 1 48%;
@@ -87,70 +121,60 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
   <header>
     <h1>Explore AI Solutions by Industry</h1>
     <p>Discover how we help real businesses overcome real problems using AI.</p>
   </header>
-
   <main>
     <section>
+      <div class="section-image"><img src="images/coaching.jpg" alt="Coaching" class="section-image"></div>
       <div class="section-text">
-        <h2>At Brilliant AI Solutions, we’re more than a tech company—we’re your growth partner.</h2>
-        <p><strong>We believe every small business deserves a big edge.</strong><br>
-        At Brilliant AI Solutions, we’re driven by a single purpose: to put the power of artificial intelligence into the hands of the passionate, the driven, the difference-makers. You know—the small business owners, coaches, consultants, trainers, and entrepreneurs who show up every day to serve others with heart and hustle.</p>
-        <p>We exist for you. Not just to make life easier, but to multiply your impact. To help you scale your vision, reach more people, and reclaim time for what matters most.</p>
-        <h2>🎯 Coaches, Consultants & Trainers</h2>
-        <p><strong>Pain Points:</strong> Repetitive onboarding, time-consuming content creation, inconsistent communication, and limited time for client interaction.</p>
-        <p><strong>Our Solution:</strong> AI-generated welcome emails, automated client check-ins, lead magnets, fitness program templates, personalized messaging, and weekly newsletter content—freeing up time so you can focus on transformation, not admin.</p>
+        <h2>Coaches, Consultants & Trainers</h2>
+        <p>Time is money — but too much time is lost to scheduling, billing, and follow-ups. We help you automate client onboarding, reminders, and even content generation, so you can focus on helping people transform their lives.</p>
       </div>
-      <img src="images/coaching.jpg" alt="Coaching" class="section-image" />
     </section>
-
     <section>
+      <div class="section-image"><img src="images/salon.jpg" alt="Salon and Spa" class="section-image"></div>
       <div class="section-text">
-        <h2>💇 Salons, Spas & Barber Shops</h2>
-        <p><strong>Pain Points:</strong> Missed appointments, inconsistent follow-ups, overwhelmed front desk—common issues in salons, spas, and barber shops alike.</p>
-        <p><strong>Our Solution:</strong> Automated booking reminders, virtual receptionist chatbots, and review request flows to increase retention.</p>
+        <h2>Salons, Spas & Barber Shops</h2>
+        <p>Your stylists should be styling — not stuck texting clients or managing bookings. We implement AI assistants that handle confirmations, reschedules, and client follow-up so you don’t miss a single opportunity.</p>
       </div>
-      <img src="images/salon.jpg" alt="Salon" class="section-image" />
     </section>
-
     <section>
+      <div class="section-image"><img src="images/realestate.jpg" alt="Real Estate" class="section-image"></div>
       <div class="section-text">
-        <h2>🏠 Real Estate</h2>
-        <p><strong>Pain Points:</strong> Losing leads, slow response times, manual listing updates.</p>
-        <p><strong>Our Solution:</strong> AI chat assistants that pre-qualify buyers, auto-responses for inquiries, and social media-ready listing descriptions.</p>
+        <h2>Real Estate</h2>
+        <p>Agents waste valuable hours chasing leads and managing listings. Our AI tools nurture prospects, schedule tours, and automate listing updates — giving you more time to close deals and grow your business.</p>
       </div>
-      <img src="images/realestate.jpg" alt="Real Estate" class="section-image" />
     </section>
-
     <section>
+      <div class="section-image"><img src="images/retail.jpg" alt="Retail" class="section-image"></div>
       <div class="section-text">
-        <h2>💼 Retail & E-Commerce</h2>
-        <p><strong>Pain Points:</strong> Abandoned carts, order tracking overload, customer support fatigue.</p>
-        <p><strong>Our Solution:</strong> Smart messaging for abandoned carts, automated FAQs, personalized upsell flows — all handled by your AI assistant.</p>
+        <h2>Retail & E-Commerce</h2>
+        <p>Inventory tracking, customer service, abandoned cart recovery — AI handles it all. We help you set up systems that increase sales, improve service, and keep customers coming back.</p>
       </div>
-      <img src="images/retail.jpg" alt="Retail" class="section-image" />
     </section>
-
     <section>
+      <div class="section-image"><img src="images/custom.jpg" alt="Custom Solutions" class="section-image"></div>
       <div class="section-text">
-        <h2>📣 Don't See Your Industry?</h2>
-        <p>No worries — our team can tailor a solution just for you. Whether you're a photographer, event planner, virtual assistant agency, or something entirely unique, AI can help you scale smarter.</p>
+        <h2>Custom Solutions</h2>
+        <p>Don’t see your industry listed? No problem. We create AI workflows tailored to your specific needs. Let’s explore what’s possible for your business and build something custom together.</p>
       </div>
-      <img src="images/custom.jpg" alt="Custom Industry" class="section-image" />
     </section>
-
     <section>
+      <div class="section-image"><img src="images/cta.jpg" alt="Call to Action" class="section-image"></div>
       <div class="section-text">
-        <h2>⚡ Ready to Take the Next Step?</h2>
-        <p>Stop wasting time and money on manual tasks. Your competitors are already automating. Why not you?</p>
-        <a class="button" href="index.html#contact">Get Your Free Consultation</a>
+        <h2>Ready to take the next step?</h2>
+        <p>Stop wasting time and money on repetitive tasks. Let AI help you scale smarter. Reach out today and see how Brilliant AI Solutions can revolutionize your business.</p>
+        <a href="index.html#contact" class="button">Contact Us</a>
       </div>
-      <img src="images/cta.jpg" alt="Call to Action" class="section-image" />
     </section>
   </main>
-
   <footer>
     &copy; 2025 Brilliant AI Solutions. All rights reserved.
   </footer>
