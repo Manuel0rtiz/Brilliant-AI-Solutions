@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brilliant AI Solutions</title>
-  <link rel="icon" type="image/png" href="favicon-v2.png" />
+  <title>Explore Solutions | Brilliant AI Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Harmattan&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
@@ -16,65 +14,49 @@
       line-height: 1.7;
     }
     header {
-      background: linear-gradient(to bottom right, rgba(11, 19, 43, 0.85), rgba(28, 119, 195, 0.85)), url('images/Untitled design (11).png') center/cover no-repeat;
+      background: linear-gradient(to bottom right, rgba(11, 19, 43, 0.85), rgba(28, 119, 195, 0.85));
       color: white;
       padding: 4rem 2rem 3rem;
       text-align: center;
-      position: relative;
-    }
-    .logo-img {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      height: 60px;
-      width: auto;
-      transition: filter 0.3s ease, transform 0.3s ease;
-      filter: drop-shadow(0 0 0 transparent);
-    }
-    .logo-img:hover {
-      filter: drop-shadow(0 0 10px #ffffff);
-      transform: scale(1.05);
     }
     header h1 {
       margin: 0;
       font-size: 2.8rem;
       font-family: 'Amaranth', sans-serif;
     }
-    header p.tagline {
-      margin: 1rem 0 0;
+    header p {
+      margin-top: 1rem;
       font-size: 1.25rem;
-      font-family: 'Harmattan', sans-serif;
       color: #60a3bc;
     }
-    section {
+    main {
       max-width: 900px;
       margin: auto;
       padding: 2rem;
+    }
+    section {
       background: white;
+      padding: 2rem;
       margin-top: 2rem;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
     }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
+    .section-text {
+      flex: 1 1 55%;
+    }
+    .section-image {
+      flex: 1 1 40%;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     h2 {
       font-weight: 600;
       color: #0b132b;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 3rem;
     }
     .button {
       display: inline-block;
@@ -89,123 +71,77 @@
     .button:hover {
       background: #60a3bc;
     }
-    .hero-animated-text {
-      margin-top: 2rem;
-      font-size: 1.25rem;
-      font-weight: 300;
-      color: #ffffff;
-      height: 3em;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-    }
-    .hero-animated-text span {
-      position: absolute;
-      width: 100%;
-      opacity: 0;
-      animation: slideText 9s infinite;
-    }
-    .hero-animated-text span:nth-child(1) { animation-delay: 0s; }
-    .hero-animated-text span:nth-child(2) { animation-delay: 3s; }
-    .hero-animated-text span:nth-child(3) { animation-delay: 6s; }
-
-    @keyframes slideText {
-      0% { opacity: 0; transform: translateY(100%); }
-      10% { opacity: 1; transform: translateY(0); }
-      30% { opacity: 1; transform: translateY(0); }
-      40% { opacity: 0; transform: translateY(-100%); }
-      100% { opacity: 0; }
-    }
-    .section-image {
-      max-width: 45%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .two-column {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
-    }
-    .two-column > div {
-      flex: 1 1 45%;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
     }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const sections = document.querySelectorAll('section');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.1 });
-      sections.forEach(section => {
-        observer.observe(section);
-      });
-    });
-  </script>
 </head>
 <body>
   <header>
-    <img src="ailogo.png" alt="Brilliant AI Logo" class="logo-img" />
-    <h1>Brilliant AI Solutions</h1>
-    <p class="tagline">Smarter Systems. More Freedom.</p>
-    
+    <h1>Explore AI Solutions by Industry</h1>
+    <p>Discover how we help real businesses overcome real problems using AI.</p>
   </header>
 
-  <section class="two-column">
-    <img src="images/small-business.jpg" alt="Small Business" class="section-image" />
-    <div>
-      <h2>🚀 What We Do</h2>
-      <p>Feeling stretched too thin? Struggling to keep up with client messages, schedule appointments, or manage repetitive tasks? You're not alone. Most small business owners are drowning in busywork that keeps them from doing what they love — and what truly grows their business.</p>
-      <p>At Brilliant AI Solutions, we help small businesses reclaim their time and boost productivity by automating those repetitive, time-consuming tasks with custom AI tools. Whether it's client communication, scheduling, data entry, or content creation — we've got you covered.</p>
-      <p><strong>Use Case:</strong> A local salon reduced missed appointments by 80% after implementing our smart booking assistant, while a real estate agent saved 6+ hours per week with automated lead follow-ups.</p>
-      <p><strong>Impact:</strong> More consistency, faster responses, and better client retention — all without hiring more staff.</p>
-      <a class="button" href="#">Explore Solutions</a>
-    </div>
-  </section>
+  <main>
+    <section>
+      <div class="section-text">
+        <h2>💇 Salons, Spas & Barber Shops</h2>
+        <p><strong>Pain Points:</strong> Missed appointments, inconsistent follow-ups, overwhelmed front desk—common issues in salons, spas, and barber shops alike.</p>
+        <p><strong>Our Solution:</strong> Automated booking reminders, virtual receptionist chatbots, and review request flows to increase retention.</p>
+      </div>
+      <img src="images/salon.jpg" alt="Salon" class="section-image" />
+    </section>
 
-  <section class="two-column">
-    <img src="images/assistant.jpg" alt="AI Assistant" class="section-image" />
-    <div>
-      <h2>💡 Services</h2>
-      <ul>
-        <li>AI-powered booking & scheduling tools</li>
-        <li>Virtual receptionist assistants</li>
-        <li>Automated customer follow-ups</li>
-        <li>Lead qualification and nurturing</li>
-        <li>AI content creation (posts, messages, emails)</li>
-        <li>And more tailored to your industry</li>
-      </ul>
-    </div>
-  </section>
+    <section>
+      <div class="section-text">
+        <h2>🏠 Real Estate</h2>
+        <p><strong>Pain Points:</strong> Losing leads, slow response times, manual listing updates.</p>
+        <p><strong>Our Solution:</strong> AI chat assistants that pre-qualify buyers, auto-responses for inquiries, and social media-ready listing descriptions.</p>
+      </div>
+      <img src="images/realestate.jpg" alt="Real Estate" class="section-image" />
+    </section>
 
-  
+    <section>
+      <div class="section-text">
+        <h2>🎯 Coaches, Consultants & Trainers</h2>
+        <p><strong>Pain Points:</strong> Repetitive onboarding, time-consuming content creation, inconsistent communication, and limited time for client interaction.</p>
+        <p><strong>Our Solution:</strong> AI-generated welcome emails, automated client check-ins, lead magnets, fitness program templates, personalized messaging, and weekly newsletter content—freeing up time so you can focus on transformation, not admin.</p>
+      </div>
+      <img src="images/coaching.jpg" alt="Coaching" class="section-image" />
+    </section>
 
-  <section class="two-column">
-    <img src="images/entrepreneur.jpg" alt="Who We Work With" class="section-image" />
-    <div>
-      <h2>🤝 Who We Work With</h2>
-      <p>We partner with hardworking small business owners, entrepreneurs, and solo professionals who want to scale without burning out. From salons and realtors to coaches and consultants, our clients are ready to delegate the busywork and focus on growth.</p>
-      <p>Whether you're a local business looking for a smarter way to manage customer interactions or a growing agency in need of automation — Brilliant AI Solutions builds tools that adapt to your needs, not the other way around.</p>
-    </div>
-  </section>
+    <section>
+      <div class="section-text">
+        <h2>💼 Retail & E-Commerce</h2>
+        <p><strong>Pain Points:</strong> Abandoned carts, order tracking overload, customer support fatigue.</p>
+        <p><strong>Our Solution:</strong> Smart messaging for abandoned carts, automated FAQs, personalized upsell flows — all handled by your AI assistant.</p>
+      </div>
+      <img src="images/retail.jpg" alt="Retail" class="section-image" />
+    </section>
 
-  <section class="two-column">
-    <img src="images/contact.jpg" alt="Contact Us" class="section-image" />
-    <div>
-      <h2>📞 Get in Touch</h2>
-      <p>Ready to simplify your systems and grow your business with AI? Reach out to us to get a free consultation and demo.</p>
-      <a class="button" href="mailto:hello@brilliantaisolutions.com">Contact Us</a>
-    </div>
-  </section>
+    <section>
+      <div class="section-text">
+        <h2>📣 Don't See Your Industry?</h2>
+        <p>No worries — our team can tailor a solution just for you. Whether you're a photographer, event planner, virtual assistant agency, or something entirely unique, AI can help you scale smarter.</p>
+      </div>
+      <img src="images/custom.jpg" alt="Custom Industry" class="section-image" />
+    </section>
 
-$1
+    <section>
+      <div class="section-text">
+        <h2>⚡ Ready to Take the Next Step?</h2>
+        <p>Stop wasting time and money on manual tasks. Your competitors are already automating. Why not you?</p>
+        <a class="button" href="index.html#contact">Get Your Free Consultation</a>
+      </div>
+      <img src="images/cta.jpg" alt="Call to Action" class="section-image" />
+    </section>
+  </main>
+
+  <footer>
     &copy; 2025 Brilliant AI Solutions. All rights reserved.
   </footer>
 </body>
